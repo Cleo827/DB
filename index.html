@@ -1008,13 +1008,14 @@ body.dark-mode .hero-content h1 {
 
 @media (max-width: 700px) {
   .image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 0.7rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-items: center;
   }
   .image-item {
-    width: 48vw;
-    min-width: 130px;
+    width: 95%;
+    min-width: 0;
     max-width: 180px;
     margin-bottom: 1rem;
   }
